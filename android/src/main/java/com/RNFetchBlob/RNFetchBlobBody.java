@@ -1,5 +1,6 @@
 package com.RNFetchBlob;
 
+import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.util.Base64;
 
@@ -18,10 +19,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 
-import android.net.Uri;
-import okhttp3.MediaType;
-import okhttp3.RequestBody;
-import okio.BufferedSink;
+import expolib_v1.okhttp3.MediaType;
+import expolib_v1.okhttp3.RequestBody;
+import expolib_v1.okio.BufferedSink;
 
 class RNFetchBlobBody extends RequestBody{
 
