@@ -333,7 +333,7 @@ public class RNFetchBlobReq extends BroadcastReceiver implements Runnable {
             }
 
             // #156 fix cookie issue
-            final Request req = builder.build();
+            final Request req = builder.removeHeader("if-modified-since").build();
             clientBuilder.addNetworkInterceptor(new Interceptor() {
                 @Override
                 public Response intercept(Chain chain) throws IOException {
